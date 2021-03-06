@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algoritm</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="image"><img src="./img/1.jpg" alt=""></div>
+<div class="main">
+    <div class="box">
+        <img class="imgSetterSqrts" src="./img/hit.jpg" alt="">
+    </div>
+    <div class="box boxWithIndicators">
+        <div id="sensor1"><img class="symbol" src="./img/a.jpg" alt=""></div>
+        <div id="sensor2"><img class="symbol" src="./img/b.jpg" alt=""></div>
+    </div>
+    <div class="box">
+        <img class="imgSetterSqrts" src="./img/k1.jpg" alt="">
+    </div>
+    <div class="box boxWithIndicators">
+        <div id="sensor3"><img class="symbol" src="./img/a.jpg" alt=""></div>
+    </div>
+    <div class="box">
+        <img class="imgSetterSqrts" src="./img/dc.jpg" alt="">
+    </div>
+    <div class="box boxWithIndicators">
+        <div id="sensor4"><img class="symbol" src="./img/a.jpg" alt=""></div>
+        <div id="sensor5"><img class="symbol" src="./img/b.jpg" alt=""></div>
+    </div>
+    <div class="box">
+        <img class="imgSetterSqrts" src="./img/k3.jpg" alt="">
+    </div>
+    <div class="box">
+        <img class="imgSetterSqrts" src="./img/bcvm.jpg" alt="">
+    </div>
+</div>
+<div>
+    Расшифровка цвета датчиков: <br>
+    1) <b><span style="color: lightskyblue">голубой</span></b> - при стартовой инициализации <br>
+    2) <b><span style="color: red">красный</span></b> - при высоком сигнале с датчика <br>
+    3) <b><span style="color: gainsboro">серый</span></b> - при низком сигнале с датчика <br>
+    4) <b><span style="color: green">зеленый</span></b> - с датчика приходит сигнал в пределах нормы <br>
+    Формат ввода:<br/>
+    1) для обрыва ввести "номерУчастка + 0" <br/>
+    2) для К/З ввести "номерУчастка + 1" <br/>
+    Например, для моделирования К/З на 4-ом участке ввести "41" <br/>
+    <input id="inputSetStartCase" type="text" placeholder="Введите две цифры">
+    <button id="buttonSetStartCase">Start magic</button>
+</div>
+
+
+
+
+
+
+<script src="objects.js"></script>
+</body>
+</html>
