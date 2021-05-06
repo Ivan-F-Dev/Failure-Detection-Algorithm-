@@ -32,3 +32,19 @@
     width: 70%;
     vertical-align: middle;
 }
+
+#sensor1 {
+    transition: 2000ms;
+}
+#sensor2 {
+    transition: 2000ms;
+}
+#sensor3 {
+    transition: 2000ms;
+}
+#sensor4 {
+    transition: 2000ms;
+}
+#sensor5 {
+    transition: 2000ms;
+}
