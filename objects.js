@@ -1,10 +1,10 @@
 let numberOfChangedCase // ввод пользователя
 let currentCase //переменная для присвоения выбранного сценария
-const insertSetStartCase = document.querySelector('#inputSetStartCase')
+const inputSetStartCase = document.querySelector('#inputSetStartCase')
 const buttonSetStartCase = document.querySelector('#buttonSetStartCase')
 buttonSetStartCase.onclick = play
  function play () {
-     switch (insertSetStartCase.value) {
+     switch (inputSetStartCase.value) {
          case "10": numberOfChangedCase = 0; break
          case "11": numberOfChangedCase = 1; break
          case "20": numberOfChangedCase = 2; break
@@ -21,7 +21,7 @@ buttonSetStartCase.onclick = play
          case "71": numberOfChangedCase = 13; break
          default: numberOfChangedCase = 0
      }
-     insertSetStartCase.value = ''
+     inputSetStartCase.value = ''
      currentCase = failureCases[numberOfChangedCase]
      console.log(currentCase)
      for (i = 0; i < currentCase.length; i++) {
@@ -67,25 +67,26 @@ let allSensors = [
 ]
 
 failureCases = [
+    //У1
     ['-', '-', '-', '-', '-'],
     ['-', '-', '-', '-', '-'],
-
+    //У2
     ['-', 'H', '-', '-', '-'],
     ['+', '-', '-', '-', '-'],
-
+    //У3
     ['-', 'H', '-', '-', '-'],
     ['+', '-', '-', '-', '-'],
-
+    //У4
     ['-', 'H', '-', '-', '-'],
     ['+', '-', '+', '-', '-'],
-
-    ['-', 'H', '-', '-', '-'],
+    //У5
+    ['H', 'H', 'H', '-', '-'],
     ['+', '-', '+', '-', '-'],
-
-    ['-', 'H', '-', '-', 'H'],
+    //У6
+    ['H', 'H', 'H', '-', 'H'],
     ['+', '-', '+', '+', '-'],
-
-    ['-', 'H', '-', '-', 'H'],
+    //У7
+    ['H', 'H', 'H', '-', 'H'],
     ['+', '-', '+', '+', '-'],
 ] // массив с разными сценариями отказа
 
